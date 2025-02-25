@@ -1,0 +1,87 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main section styling */
+.main {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.main h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.main p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Image grid container */
+.image {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+}
+
+/* Product card styling */
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+/* Product image */
+.photo {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product title */
+.img h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Product description */
+.img h4 {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Product price */
+.img p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .image {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1165px) {
+  .image {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
